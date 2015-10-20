@@ -115,9 +115,46 @@ result = sum_up(4,9,8, 22,67)
 puts "result = #{result}"
 ```
 
+## Passing a Block to a Method 
 
+The last argument passed to a method can be a block. A block is a bunch of code that gets invoked by the method.
+
+*Blocks are similar to Javascript anonymous functions.* 
+
+* Blocks are passed to methods.
+
+* Blocks can be invoked inside of a method.
+
+* Blocks can be passed arguments from the method it's invoked from.
+
+#### Using blocks
+
+```ruby
+# Pass a block argument to the Fixnum#times method
+3.times { puts "Say Hello" }
+
+# same as above but pass the block an argument
+3.times { |num| puts "#{num} Say Hello" }
+
+
+# Look up the Fixnum#times method, Oh Fixnum class is a child of Integer class!
+
+# call a Range object, (33..44), each method and pass it a block.
+# Look up the Range#each method
+(33..44).each { |i| puts "got #{i}" }
+
+```
+
+## Keyword Arguments
+
+Ruby 2.0 added a cleaner way to use arguments. Lets take a look at Keyword Arguments.
+
+Look at this video. [A 6 minute guide to Keyword Arguments](https://www.youtube.com/watch?v=u8Q6Of_mScI)
+
+Read this article. 
 ## Resources
 
 - [Rubymonk Methods](https://rubymonk.com/learning/books/1-ruby-primer/chapters/19-ruby-methods/lessons/69-new-lesson)
 - [Thoughtbot Ruby 2 Keyword Arguments](https://rubymonk.com/learning/books/1-ruby-primer/chapters/19-ruby-methods/lessons/69-new-lesson)
 - [Ruby Keyword arguments video](https://www.youtube.com/watch?v=u8Q6Of_mScI)
+- [Keyword Arguments](https://www.youtube.com/watch?v=u8Q6Of_mScI)
