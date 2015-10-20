@@ -13,11 +13,38 @@ By the end of this, students should be able to:
 - Create a method with a splat operator.
 - Create a method with keyword arguments.
 
-## Instructions
-
-#### Calling a method
+## Creating Simple Methods
 
 > Create a file method_simple.rb and run it.
+
+```ruby
+# keyword 'def' is used to create a method
+def say_hello
+  # body of method is here
+  "Hello World"
+end  # must have and end
+
+puts say_hello
+
+# create a method with two params
+def add(num1, num2)
+  num1 + num2
+end
+
+# no need for semicolons, but one can use them.
+# semi-colons are not typically used in Ruby.
+# can use parens or not!
+puts add(33, 9)
+puts add 33, 9
+
+# lets leave off a param
+add(88)
+# Throws an ArgumentError exception
+# `add': wrong number of arguments (1 for 2) (ArgumentError)
+```
+## Method Parameters
+
+> Create a demo/method_params.rb and run it.
 
 ```ruby
 # lets redine add to take 3 params, last one not required
