@@ -15,7 +15,7 @@ By the end of this, students should be able to:
 
 ## Creating Simple Methods
 
-> Create a file method_simple.rb and run it.
+> Create a file demo/method_simple.rb and run it.
 
 ```ruby
 # keyword 'def' is used to create a method
@@ -128,6 +128,8 @@ The last argument passed to a method can be a block. A block is a bunch of code 
 * Blocks can be passed arguments from the method it's invoked from.
 
 #### Using blocks
+
+> Create a demo/method_blocks.rb and run it.
 
 ```ruby
 # Pass a block argument to the Fixnum#times method
